@@ -1,0 +1,14 @@
+
+.menu_profile {
+    display: none !important;
+}
+
+/* Hiển thị bảng khi có lớp active */
+.menu_profile.active {
+    display: block;
+}
+
+h2{
+    color: red;
+    background-color: red;
+}

@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="../layout/navber.css" th:href="@{/navber.css}" rel="stylesheet"/>
+    <link th:href="@{https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css}" rel="stylesheet"
+          integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+<body>
+<!-- Header Section Begin -->
+<header class="header">
+    <h2>PHONG</h2>
+    <div th:fragment="navbar" class="header__top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-7">
+                    <div class="header__top__left">
+                        <p>Free shipping, 30-day return or refund guarantee.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-5">
+                    <div class="header__top__right" style="position: relative">
+                        <div class="header__top__links" id="menuToggle">
+                            <a th:if="${session.UserLoginSession == null}" th:href="@{/login-account}">Sign in</a>
+                            <div th:unless="${session.UserLoginSession == null}"
+                                 style="display: inline;margin-right: 15px">
+                                <a th:if="${session.UserLoginSession != null}"
+                                   th:text="${session.UserLoginSession.fullName}">
+
+                                </a>
+                            </div>
+                        </div>
+                        <ul class="menu_profile"
+                            style="list-style: none;background-color: #494747;position: absolute;right: -80px;text-align: center; color: #fff;z-index: 2; padding: 10px 10px 10px 10px;   display: none;">
+                            <li style="width: 120px; padding: 5px 0; border-bottom: 1px solid #fff;">Profile</li>
+                            <li style="width: 120px; padding: 5px 0; border-bottom: 1px solid #fff">Cart</li>
+                            <li style="width: 120px; padding: 5px 0; border-bottom: 1px solid #fff">History</li>
+                            <li style="padding: 5px 0">Logout</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-3">
+                <div class="header__logo">
+                    <a href="/home"><img th:src="@{img/logo.png}" alt="" src=""></a>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <nav class="header__menu mobile-menu">
+                    <ul>
+                        <li class="active"><a href="/home">Home</a></li>
+                        <li><a href="/shop">Shop</a></li>
+                        <li><a href="#">Pages</a>
+                            <ul class="dropdown">
+                                <li><a href="/about">About Us</a></li>
+                                <li><a href="/shop-details">Shop Details</a></li>
+                                <li><a href="/shopping-cart">Shopping Cart</a></li>
+                                <li><a href="/checkout">Check Out</a></li>
+                                <li><a href="/blog-details">Blog Details</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/blog">Blog</a></li>
+                        <li><a href="/contact">Contacts</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-lg-3 col-md-3">
+                <div class="header__nav__option">
+                    <a href="#" class="search-switch"><img src="img/icon/search.png" alt=""></a>
+                    <a href="#"><img src="img/icon/heart.png" alt=""></a>
+                    <a href="/shopping-cart"><img src="img/icon/cart.png" alt=""> <span>0</span></a>
+                    <div class="price">$0.00</div>
+                </div>
+            </div>
+        </div>
+        <div class="canvas__open"><i class="fa fa-bars"></i></div>
+    </div>
+</header>
+<!-- Header Section End -->
+</body>
+</html>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/src/main/java/ra/webwalefashion/model/DAO/impl/BranDAOImpl.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/ra/webwalefashion/model/DAO/impl/CartDAOImpl.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/ra/webwalefashion/model/DAO/impl/CartItemDAOImpl.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/ra/webwalefashion/model/DAO/impl/CategoryDAOImpl.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/ra/webwalefashion/model/DAO/impl/OrderDAOImpl.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/ra/webwalefashion/model/DAO/impl/OrderDetailDAOImpl.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/ra/webwalefashion/model/DAO/impl/ProductDAOImpl.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/ra/webwalefashion/model/DAO/impl/SizeDAOImpl.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/ra/webwalefashion/model/DAO/impl/UserDAOImpl.java" dialect="GenericSQL" />
+  </component>
+</project>

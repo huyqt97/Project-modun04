@@ -1,0 +1,58 @@
+.main{
+    background-color: #f5f7fb !important;
+}
+.create{
+width: 70%;
+margin: 30px auto;
+/*height: 100vh;*/
+}
+.create h1{
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid rgb(165, 163, 163);
+}
+.create form{
+    border-left: 1px solid #9f9c9c;
+    width: 60%;
+    background-color: #fff;
+    margin: 30px auto; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.create .input-form{
+    width: 80%;
+    margin-bottom: 10px;
+}
+.create .input-form input{
+    outline: none;
+    border: none;
+    background-color: rgb(240, 242, 244);
+    border-bottom: 1px solid rgb(165, 163,  163);
+    width: 100%;
+    padding: 5px;
+}
+.create .input-sb{
+    background-color: rgb(88, 175, 141);
+    padding: 8px 20px;
+    color: #fff;
+    border: none;
+    border-radius: 5px ;
+    width: 80%;
+    margin: 20px 0px;
+}
+.create .combo-x3{
+    padding: 10px 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.create .combo-x3 input{
+    width: 100px;
+    outline: none;
+    border: none;
+    background-color: rgb(240, 242, 244);
+    border-bottom: 1px solid rgb(165, 163,  163);
+    padding: 5px;
+}
